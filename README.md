@@ -14,3 +14,5 @@ This is application of social netwoeking where you can chat, upload photo, Like 
   <li>Change Profile Pic</li>
   <li>Manage Session</li>
 </ul>
+
+<img src="https://github.com/kgpatidar/whatson---Social-Networking-Application/blob/master/whatsonlogo.jpg" width="350"/>
