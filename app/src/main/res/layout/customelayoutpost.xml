@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/profileofpostuploader"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/defaultprofile"></ImageView>
+
+        <TextView
+            android:id="@+id/usernameofpostuploader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/profileofpostuploader"
+            android:text="kgp123@gmail.com"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black"
+            android:textSize="20dp"></TextView>
+
+        <TextView
+            android:id="@+id/dateofuploadofpostuploader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toEndOf="@id/profileofpostuploader"
+            android:layout_below="@+id/usernameofpostuploader"
+            android:text="April 22, 1999"></TextView>
+
+        <TextView
+            android:id="@+id/captionofpostuploader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profileofpostuploader"
+            android:text="I am very happy to see this"
+            android:textSize="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"></TextView>
+
+        <ImageView
+            android:id="@+id/postimageofpostuploader"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_below="@id/captionofpostuploader"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/defaultprofile"></ImageView>
+
+        <ImageView
+            android:id="@+id/likeofpostuploader"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/postimageofpostuploader"
+            android:src="@drawable/ic_likeblack"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"></ImageView>
+
+        <TextView
+            android:id="@+id/numberoflikeofpostuploader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/postimageofpostuploader"
+            android:text="10"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/fira_mono_bold"
+            android:textSize="20dp"
+            android:layout_toEndOf="@id/likeofpostuploader"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/maincolor"></TextView>
+
+        <ImageView
+            android:id="@+id/commentofpostuploader"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/postimageofpostuploader"
+            android:src="@drawable/ic_commentblack"
+            android:layout_marginLeft="30dp"
+            android:layout_toEndOf="@+id/numberoflikeofpostuploader"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"></ImageView>
+    </RelativeLayout>
+
+</RelativeLayout>

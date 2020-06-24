@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name" translatable="false">WhatsOn</string>
+
+
+    <string-array name="month_arrays">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+
+</resources>

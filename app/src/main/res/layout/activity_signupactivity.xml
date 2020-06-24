@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".signupactivity">
+
+    <RelativeLayout
+        android:id="@+id/relativelayoutsignup1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/backgroundrounded">
+
+        <ImageView
+            android:id="@+id/profilepictureimageviewsignup"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:src="@drawable/defaultprofile"></ImageView>
+
+        <EditText
+            android:id="@+id/fullnamesignup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profilepictureimageviewsignup"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:fontFamily="@font/fira_mono_bold"
+            android:hint="Name"
+            android:maxLines="1"
+            android:textAlignment="center"
+            android:textColor="@color/white"></EditText>
+    </RelativeLayout>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/usernamesignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativelayoutsignup1"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:fontFamily="@font/fira_mono_bold"
+        android:hint="Username"
+        android:maxLines="1"
+        android:textAlignment="center"
+        android:textColor="@color/maincolor"></com.google.android.material.textfield.TextInputEditText>
+
+    <EditText
+        android:id="@+id/passwordsignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/usernamesignup"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:fontFamily="@font/fira_mono_bold"
+        android:hint="Password"
+        android:maxLines="1"
+        android:textAlignment="center"
+        android:textColor="@color/maincolor"></EditText>
+
+
+    <RadioGroup
+        android:id="@+id/genderradio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passwordsignup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radiomalesignup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:fontFamily="@font/fira_mono_bold"
+            android:text="Male"
+            android:textColor="@color/maincolor"
+            android:textSize="20dp"
+            android:textStyle="bold"></RadioButton>
+
+        <RadioButton
+            android:id="@+id/radiofemalesignup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginLeft="50dp"
+            android:fontFamily="@font/fira_mono_bold"
+            android:text="Female"
+            android:textColor="@color/maincolor"
+            android:textSize="20dp"
+            android:textStyle="bold"></RadioButton>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/dobview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/genderradio"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/fira_mono_bold"
+        android:text="Date of Birth"
+        android:textAlignment="center"
+        android:textColor="@color/maincolor"
+        android:textSize="20dp"></TextView>
+
+    <RelativeLayout
+        android:id="@+id/datewala"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dobview">
+
+        <EditText
+            android:id="@+id/dateEditText"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:hint="Date"
+            android:inputType="date"
+            android:maxLength="2"
+            android:textAlignment="center"></EditText>
+
+        <EditText
+            android:id="@+id/monthEditText"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:hint="Month"
+            android:inputType="date"
+            android:maxLength="2"
+            android:textAlignment="center"></EditText>
+
+        <EditText
+            android:id="@+id/yearEdittext"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:hint="Year"
+            android:inputType="date"
+            android:maxLength="4"
+            android:textAlignment="center"></EditText>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/signupbuttoninsignupmode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/datewala"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/rounded"
+        android:fontFamily="@font/fira_mono_bold"
+        android:text="Signup"
+        android:textColor="@color/white"
+        android:textSize="25dp"></Button>
+
+
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:id="@+id/signuprogress"
+        android:progress="30"
+        android:secondaryProgressTint="@color/maincolor"
+        android:progressBackgroundTint="@color/maincolor"
+        android:tag="Upload"
+        android:layout_marginLeft="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/signupbuttoninsignupmode"
+        android:padding="10dp"></ProgressBar>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigatorprofile"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/intenttoreachlogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/fira_mono_bold"
+            android:text="Login"
+            android:textAlignment="center"
+            android:textColor="@color/maincolor"
+            android:textSize="20dp"></TextView>
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+</RelativeLayout>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    tools:context=".userprofile">
+
+    <is.arontibo.library.ElasticDownloadView
+        android:id="@+id/progressonuser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:background="@color/white"></is.arontibo.library.ElasticDownloadView>
+
+    <RelativeLayout
+        android:id="@+id/mainuserlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/roundedtop"></RelativeLayout>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/viewalluserinageview"
+            android:src="@drawable/ic_person_add_black_24dp"
+            android:layout_margin="20dp"></ImageView>
+
+        <ImageView
+            android:id="@+id/editlogoimageforprofile"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="20dp"
+            android:src="@drawable/setting"></ImageView>
+
+        <RelativeLayout
+            android:id="@+id/relativecontent1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="75dp">
+
+            <ImageView
+                android:id="@+id/profilepictureinprofileactivity"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_person_black_24dp"></ImageView>
+
+            <TextView
+                android:id="@+id/nameofcurrentuserprofileactivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profilepictureinprofileactivity"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/fira_mono_bold"
+                android:linksClickable="true"
+                android:text="fetching name.."
+                android:textAlignment="center"
+                android:textColor="@color/maincolor"
+                android:textSize="20dp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/dateofbirthprofileactivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nameofcurrentuserprofileactivity"
+                android:fontFamily="monospace"
+                android:text="DD/MM/YYYY"
+                android:textAlignment="center"></TextView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/relativecontent1"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/usernameuserprofiletextview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Username"
+                android:textAlignment="center"
+                android:textColor="@color/maincolor"></TextView>
+
+            <ImageView
+                android:id="@+id/whatsonlogoonprofile"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_above="@id/viewmypostbutton"
+                android:src="@drawable/whatsonlogo"></ImageView>
+
+
+            <Button
+                android:id="@+id/viewmypostbutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/viewallpostbutton"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/rounded"
+                android:fontFamily="@font/fira_mono_bold"
+                android:text="View My Post"
+                android:textSize="20dp"></Button>
+
+            <Button
+                android:id="@+id/viewallpostbutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/uploadpostbutton"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/rounded"
+                android:fontFamily="@font/fira_mono_bold"
+                android:text="View All Post"
+                android:textSize="20dp"></Button>
+
+            <Button
+                android:id="@+id/uploadpostbutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/rounded"
+                android:fontFamily="@font/fira_mono_bold"
+                android:text="Upload New Post"
+                android:textSize="20dp"></Button>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

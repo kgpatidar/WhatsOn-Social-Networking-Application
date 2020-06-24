@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="example.javatpoint.com.optionmenu.MainActivity">
+
+    <item
+        android:id="@+id/editusername"
+        android:icon="@drawable/ic_vpn_key_black_24dp"
+        android:orderInCategory="100"
+        android:title="Change Username"/>
+    <item
+        android:id="@+id/editpassword"
+        android:icon="@drawable/ic_vpn_key_black_24dp"
+        android:orderInCategory="100"
+        android:title="Change Password"/>
+    <item
+        android:id="@+id/signoutmenu"
+        android:icon="@drawable/ic_vpn_key_black_24dp"
+        android:orderInCategory="100"
+        android:title="Sign Out"/>
+    <item
+        android:id="@+id/closemenu"
+        android:icon="@drawable/ic_vpn_key_black_24dp"
+        android:orderInCategory="100"
+        android:title="Close"></item>
+    <item
+        android:id="@+id/contactusmenu"
+        android:icon="@drawable/ic_vpn_key_black_24dp"
+        android:orderInCategory="100"
+        android:title="Contact Us"/>
+
+</menu>

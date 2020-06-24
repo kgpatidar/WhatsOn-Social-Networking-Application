@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".viewmypostactivity">
+
+    <RelativeLayout
+        android:id="@+id/relativecontent1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/roundedtop"></RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your Post"
+        android:fontFamily="@font/fira_mono_bold"
+        android:textAlignment="center"
+        android:textColor="@color/maincolor"
+        android:textSize="30dp"
+        android:layout_marginTop="10dp"></TextView>
+
+    <ListView
+        android:id="@+id/allmypostlistview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativecontent1"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"></ListView>
+
+
+</RelativeLayout>

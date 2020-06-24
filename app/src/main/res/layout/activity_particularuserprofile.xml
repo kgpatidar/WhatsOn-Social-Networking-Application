@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".particularuserprofile">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@drawable/roundedtop"></RelativeLayout>
+
+    <ImageView
+        android:id="@+id/chatbutton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_margin="20dp"
+        android:src="@drawable/chatwhatson"></ImageView>
+
+    <RelativeLayout
+        android:id="@+id/relativecontent1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp">
+
+        <ImageView
+            android:id="@+id/profilepictureinparticular"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_person_black_24dp"></ImageView>
+
+        <TextView
+            android:id="@+id/nameofcurrentuserparticular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profilepictureinparticular"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/fira_mono_bold"
+            android:linksClickable="true"
+            android:text="fetching name.."
+            android:textAlignment="center"
+            android:textColor="@color/maincolor"
+            android:textSize="20dp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/dateofbirthparticular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nameofcurrentuserparticular"
+            android:fontFamily="monospace"
+            android:text="DD/MM/YYYY"
+            android:textAlignment="center"></TextView>
+    </RelativeLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/postlistparticular"
+        android:layout_below="@+id/relativecontent1"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="20dp"></ListView>
+
+</RelativeLayout>

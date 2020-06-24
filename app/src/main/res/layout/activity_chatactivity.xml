@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#F2EFEF"
+    android:layout_height="match_parent"
+    tools:context=".chatactivity">
+
+    <RelativeLayout
+        android:id="@+id/relativecontent1"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/maincolor">
+
+        <ImageView
+            android:id="@+id/chatprofileimage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/defaultprofile"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp"></ImageView>
+
+        <TextView
+            android:id="@+id/chatusername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="krishna123@gmail.com"
+            android:textColor="@color/black"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/fira_mono_bold"
+            android:layout_toEndOf="@+id/chatprofileimage"
+            android:layout_marginLeft="5dp"></TextView>
+
+
+    </RelativeLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relativecontent1"
+        android:layout_above="@+id/messagesend"
+        android:layout_marginTop="10dp"
+        android:dividerHeight="10dp"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/chatlistview"></ListView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/messagesend"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white">
+
+        <EditText
+            android:id="@+id/messageEdittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="70dp"
+            android:fontFamily="@font/fira_mono_bold"
+            android:maxLines="4"
+            android:focusedByDefault="false"
+            android:hint="Message"></EditText>
+
+        <ImageView
+            android:id="@+id/sendmessagebutton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_send_black_24dp"
+            android:layout_marginRight="10dp"></ImageView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

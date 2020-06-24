@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "745539722741",
+    "firebase_url": "https://whatson-56b56.firebaseio.com",
+    "project_id": "whatson-56b56",
+    "storage_bucket": "whatson-56b56.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:745539722741:android:adec537f6821cc9d7f14bc",
+        "android_client_info": {
+          "package_name": "com.example.whatson"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "745539722741-mutj0b432ijp8i1cl0oj3qlo6sd82vlh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.whatson",
+            "certificate_hash": "5b0396d392ed1139e921df250eddfcd28fa2185d"
+          }
+        },
+        {
+          "client_id": "745539722741-a1jhu77pfishthamuh0lr5m649htmtqp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZ7Kvl5McYjJa7gfR1Je382N6n5hS2sD8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "745539722741-a1jhu77pfishthamuh0lr5m649htmtqp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

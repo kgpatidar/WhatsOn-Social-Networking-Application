@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/allusersbackground"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingBottom="10dp">
+
+        <ImageView
+            android:id="@+id/alluserprofileimage"
+            android:layout_centerVertical="true"
+            android:layout_width="50dp"
+            android:layout_height="50dp"></ImageView>
+
+        <TextView
+            android:id="@+id/alluserUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Krishna Gopal"
+            android:textColor="@color/black"
+            android:layout_marginLeft="70dp"
+            android:textSize="20dp"
+            android:fontFamily="@font/fira_mono_bold"></TextView>
+
+        <TextView
+            android:id="@+id/alluserfullname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="krishna gopal patidar"
+            android:layout_marginLeft="70dp"
+            android:layout_below="@id/alluserUsername"></TextView>
+
+        <TextView
+            android:id="@+id/allusernumberofpost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="11"
+            android:layout_below="@+id/alluserUsername"
+            android:layout_toEndOf="@+id/alluserfullname"
+            android:textSize="20dp"
+            android:textColor="@android:color/holo_blue_dark"
+            android:fontFamily="@font/fira_mono_bold"></TextView>
+
+        <TextView
+            android:id="@+id/alluserdsfdsfnumberofpost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="3dp"
+            android:text="Post"
+            android:layout_below="@+id/alluserUsername"
+            android:layout_toEndOf="@+id/allusernumberofpost"
+            android:textSize="17dp"
+            android:fontFamily="@font/fira_mono_bold"></TextView>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="5dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_navigate_next_black_24dp"></ImageView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

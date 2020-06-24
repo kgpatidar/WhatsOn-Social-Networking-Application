@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/commentpostertextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="itskg1999@gmail.com"
+            android:fontFamily="monospace"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/skyblue"></TextView>
+
+        <TextView
+            android:id="@+id/commenttextview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:fontFamily="@font/fira_mono_bold"
+            android:layout_below="@+id/commentpostertextview"
+            android:text="you are looking fantastic in this picture"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="20dp"></TextView>
+
+        <TextView
+            android:id="@+id/commentdateviewr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/commenttextview"
+            android:layout_alignParentRight="true"
+            android:text="22 April, 1999"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/lightPurple"></TextView>
+    </RelativeLayout>
+
+</RelativeLayout>
